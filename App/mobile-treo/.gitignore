@@ -1,6 +1,17 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
-node_modules/
+node_modules/android/ant-build/
+node_modules/android/ant-gen/
+node_modules/android/assets/
+node_modules/android/cordova/
+node_modules/android/CordovaLib/
+node_modules/android/libs/
+node_modules/android/platform_www/
+node_modules/android/src/
+node_modules/android/*.xml
+node_modules/android/.project
+node_modules/android/*.gradle
+node_modules/android/*.properties
 platforms/
 plugins/
