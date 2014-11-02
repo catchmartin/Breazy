@@ -28,3 +28,18 @@ The personal pollution exposure monitor. Making the invisible, visible!
   * npm install mongodb
   * cd nodes/; git clone https://github.com/node-red/node-red-nodes.git
   * node red.js breazy.json
+  * 
+  
+## Scraping Info
+1. Weather
+  1. Accuweather
+  2. WeatheUnderground
+    * http://www.wunderground.com/weather/api/
+    * http://www.wunderground.com/weather/api/d/docs
+    * GET http://api.wunderground.com/api/Your_Key/features/settings/q/query.format
+    * http://www.wunderground.com/weather/api/d/docs?d=data/index&MR=1
+    * treo
+    * http://api.wunderground.com/api/$KEY/forecast/geolookup/conditions/q/CA/San_Francisco.json
+2. Sensor
+  1. London Air Quality
+    * http://api.erg.kcl.ac.uk/AirQuality/help
