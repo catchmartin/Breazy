@@ -16,7 +16,9 @@ The personal pollution exposure monitor. Making the invisible, visible!
 9. `rm -r mobile-treo`
 7. `npm install -g cordova ionic`
 8. `ionic start mobile-treo sidemenu`
-9. `git checkout`
+9. `cd mobile-treo`
+10. `ionic platform add android`
+11. `git reset --hard HEAD`
 
 ## Setting up the NodeRed server
 
