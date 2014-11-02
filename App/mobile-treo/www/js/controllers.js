@@ -33,15 +33,37 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('OverviewCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('OverviewCtrl', function($scope, $http, Reading) {
+  $scope.mygdata = [];
+
+  // Column
+  $scope.mygoptions = {
+    axes: {x: {type: "date", key: "x"}, y: {type: "linear", min: "0"}},
+        tooltip: {
+          mode: "scrubber",
+      formatter: function (x, y, series) {
+              return moment(x).fromNow() + ' : ' + y;
+          }
+        },
+        lineMode: 'linear',
+        tension: 0.7,
+        series: [
+        {
+            y: "y",
+            label: "Temperature",
+            color: "#9467bd",
+            axis: "y",
+            type: "line",
+            thickness: "2px",
+            id: "series_0"
+        }],
+      drawLegend: true,
+      drawDots: false,
+      columnsHGap: 5
+  };
+
+  // loading variable to show the spinning loading icon
+  $scope.loading = true;
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
