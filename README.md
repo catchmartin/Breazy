@@ -27,8 +27,10 @@ The personal pollution exposure monitor. Making the invisible, visible!
   * https://github.com/node-red/node-red-nodes
   * npm install mongodb
   * cd nodes/; git clone https://github.com/node-red/node-red-nodes.git
+  * cd ..
+  * copy in breazy.json file
+  * edit settings.js file for CORS https://groups.google.com/d/msg/node-red/9ZZY_2xcfaI/MHlgty0xQrcJ
   * node red.js breazy.json
-  * 
   
 ## Scraping Info
 1. Weather
