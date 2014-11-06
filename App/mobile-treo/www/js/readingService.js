@@ -7,7 +7,7 @@ angular.module('readingService', [])
 			// get all the readings
 			get : function() {
 				delete $http.defaults.headers.common['X-Requested-With'];
-				return $http.get('http://dev.thebedroomlaboratory.com/~martin/brewmonitor/api/readings');
+				return $http.get('http://dev.thebedroomlaboratory.com:1880/api/');
 			}//,
 
 			// // save a reading (pass in reading data)
