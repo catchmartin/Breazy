@@ -1,0 +1,13 @@
+
+
+function getAPI() {
+    local request = http.get("http://dev.thebedroomlaboratory.com:1880/api/", {});
+    local res = request.sendsync();
+    local data = http.jsondecode(res.body);
+    
+    //device.send("Data", [100.0, 0.5, 1.0, 0.5]);
+    
+    imp.wakeup(10, getAPI);
+}
+
+getAPI();
