@@ -26,6 +26,10 @@ The personal pollution exposure monitor. Making the invisible, visible!
 1. http://nodered.org/docs/getting-started/installation.html
   * https://github.com/node-red/node-red-nodes
   * npm install mongodb
+    * configure mongodb if necessary
+      * cd ~/Breazy/Backend/mongodb
+      * mongorestore
+      * cd ~/node-red*
   * cd nodes/; git clone https://github.com/node-red/node-red-nodes.git
   * cd ..
   * copy in breazy.json file
