@@ -20,6 +20,12 @@ The personal pollution exposure monitor. Making the invisible, visible!
 10. `ionic platform add android`
 11. `git reset --hard HEAD`
 
+
+notes: On a linux(Ubuntu 14.04 x64) I found that I had to install 2 packages to build/run the android app:
+
+1. sudo apt-get install lib32z1
+2. sudo apt-get install lib32stdc++6
+
 ## Setting up the NodeRed server
 
 1. http://nodejs.org/download/
